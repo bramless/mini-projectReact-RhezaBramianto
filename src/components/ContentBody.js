@@ -44,8 +44,8 @@ const ContentBody = () => {
     });
   };
 
-  const search = async (q) => {
-    if (q.length > 3) {
+  const search = async (event, q) => {
+    if (event.key === 'Enter' && q.length > 3) {
       const query = await searchMovie(q);
       setPopularMovies(query.results);
     }
@@ -58,7 +58,7 @@ const ContentBody = () => {
           placeholder="Search Movie"
           className="movieSearch"
           style={{ margin: "10px 10px", borderRadius: "10px", padding: "8px" }}
-          onChange={({ target }) => search(target.value)}
+          onKeyDown={(event) => search(event, event.target.value)}
         />
         <div className="movieContainer">
           <PopularMoviesList />
