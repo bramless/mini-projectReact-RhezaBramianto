@@ -23,15 +23,26 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .movieWrapper {
-  width: 500px;
+  width: 250px;
+  transition: 0.2s linear;
 }
 
-.movieSeacrh {
-  height: 50px;
-  font-size: 24px;
-  border-radius: 15px;
+.navbar-brand {
+  color: White;
+}
+
+.buttonDetails {
+  border-radius: 0 0 10px 10px;
+}
+
+.modal-content {
+  background: #252525 !important;
+}
+
+.movieWrapper:hover {
+  transform: scale(1.05);
 }
