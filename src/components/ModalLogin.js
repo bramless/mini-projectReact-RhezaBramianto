@@ -9,7 +9,6 @@ function LoginModal(props) {
   const handleShow = () => setShow(true);
 
   const handleLogin = (event) => {
-    // kode untuk melakukan login
     event.preventDefault();
     handleClose();
   }
@@ -26,7 +25,7 @@ function LoginModal(props) {
           <Form onSubmit={handleLogin}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label style={{ color :"white"}}>Email address / Username :</Form.Label>
-              <Form.Control type="email text" placeholder="Enter email" required />
+              <Form.Control type="email text" placeholder="Enter email or username" required />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
