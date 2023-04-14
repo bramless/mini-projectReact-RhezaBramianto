@@ -75,7 +75,7 @@ const ContentBody = () => {
               alt={selectedMovie.title}
               style={{ width: "100%" }}
             />
-            <p style={{ color :"white"}}>Popularity : {selectedMovie.popularity}</p>
+            <p style={{ color :"white", marginTop:"2px"}}>Movie ID : {selectedMovie.id} | Popularity : {selectedMovie.popularity}</p>
             <p style={{ color :"white"}}>{selectedMovie.overview}</p>
           </Modal.Body>
           <Modal.Footer style={{ border: 0 }} >

@@ -1,9 +1,9 @@
 import './App.css';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import LoginModal from './ModalLogin'
 
 function NavigationBar() {
     return (
@@ -19,7 +19,7 @@ function NavigationBar() {
             >
             </Nav>
             <Form className="d-flex">
-              <Button variant="outline-success">Login</Button>
+            <LoginModal/>
             </Form>
           </Navbar.Collapse>
         </Container>
