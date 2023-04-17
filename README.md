@@ -75,5 +75,7 @@ Bootstrap
 React
 Axios
 dotenv
+yup
+formik
 
 Search movie dengan API
