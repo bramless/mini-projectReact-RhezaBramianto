@@ -26,7 +26,7 @@ function LoginModal(props) {
             validationSchema={Yup.object({
               email: Yup.string()
                 .email('Invalid email address')
-                .required('Email address / Username is required'),
+                .required('Email address'),
               password: Yup.string()
                 .required('Password is required'),
             })}
@@ -61,8 +61,8 @@ function LoginModal(props) {
             {formik => (
               <Form onSubmit={formik.handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label style={{ color :"white"}}>Email address / Username :</Form.Label>
-                  <Form.Control type="text" name="email" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.email} placeholder="Enter email or username" />
+                  <Form.Label style={{ color :"white"}}>Email address :</Form.Label>
+                  <Form.Control type="text" name="email" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.email} placeholder="Enter email" />
                   {formik.touched.email && formik.errors.email ? (
                     <div className="text-danger">{formik.errors.email}</div>
                   ) : null}
